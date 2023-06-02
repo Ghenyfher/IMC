@@ -1,0 +1,51 @@
+package imc;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author gheny
+ */
+public class IMC {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+           String name;
+  double weight, height, Imc; 
+        String IMCname;
+        String IMCweight;
+        String IMCheight;
+        IMCname = JOptionPane.showInputDialog("Write the person name");
+            name = IMCname;
+        IMCweight = JOptionPane.showInputDialog("Write the person weight");
+            weight = Double.parseDouble(IMCweight);
+        IMCheight = JOptionPane.showInputDialog("Write the person height");
+            height = Double.parseDouble(IMCheight);
+        Imc = weight/(height*height);
+    if (Imc<=17) {
+        JOptionPane.showMessageDialog(null,"The person name is: " + name + "  \nThe person weight is: " + weight +"\nThe person height is: " + height +"\nThe person IMC is: " + Imc + "\nThe person is very underweight");
+    } else{
+       if ((Imc>17) && (Imc<=18.49)) {
+        JOptionPane.showMessageDialog(null,"The person name is: " + name + "  \nThe person weight is: " + weight +"\nThe person height is: " + height +"\nThe person IMC is: " + Imc + "\nThe person is underweight");
+    } else{
+       if ((Imc>=18.50) && (Imc<=24.99)) {
+        JOptionPane.showMessageDialog(null,"The person name is: " + name + "  \nThe person weight is: " + weight +"\nThe person height is: " + height +"\nThe person IMC is: " + Imc + "\nThe person has normal weight");
+    }else{
+       if ((Imc>=25) && (Imc<=29.99)) {
+        JOptionPane.showMessageDialog(null,"The person name is: " + name + "  \nThe person weight is: " + weight +"\nThe person height is: " + height +"\nThe person IMC is: " + Imc + "\nThe person is overweight");
+    }else{
+       if ((Imc>=30) && (Imc<=34.99)) {
+        JOptionPane.showMessageDialog(null,"The person name is: " + name + "  \nThe person weight is: " + weight +"\nThe person height is: " + height +"\nThe person IMC is: " + Imc + "\nThe person has obesity I");
+    }else{
+       if ((Imc>=35) && (Imc<=39.99)) {
+        JOptionPane.showMessageDialog(null,"The person name is: " + name + "  \nThe person weight is: " + weight +"\nThe person height is: " + height +"\nThe person IMC is: " + Imc + "\nThe person has obesity II (SEVERE)");
+    }  else{
+       if (Imc>=40) {
+        JOptionPane.showMessageDialog(null,"The person name is: " + name + "  \nThe person weight is: " + weight +"\nThe person height is: " + height +"\nThe person IMC is: " + Imc + "\nThe person has obesity III(MORBID)");
+    }}}}}}}
+    }
+       }
+       
+    
+
